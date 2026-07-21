@@ -471,7 +471,6 @@ return;
 
 }
 
-// Corregido: Ajuste del formato de fecha para evitar errores de fecha/undefined
 let prox = new Date(fecha + "T00:00:00");
 
 switch(tratamiento){
@@ -552,7 +551,6 @@ clase="verde";
 
 }
 
-// Formateamos la fecha a dd/mm/aaaa directamente para evitar 'undefined'
 let fechaProximaStr = isNaN(v.proxima.getTime()) 
   ? "Fecha inválida" 
   : v.proxima.toLocaleDateString('es-ES');
